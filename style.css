@@ -1,0 +1,155 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/*-------- HEADER ---------*/
+header {
+  background-color: rgb(248, 215, 174);
+  border: 10px solid sandybrown;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+
+  /* sticky header */
+  top: 0;
+  position: sticky;
+}
+
+nav {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+a {
+  color: rgb(80, 102, 124);
+  font-size: 25px;
+  text-decoration: none;
+}
+
+button {
+  background-color: blanchedalmond;
+  border: none;
+  border-radius: 10px;
+  font-size: 25px;
+  color: rgb(80, 102, 124);
+  width: 200px;
+  padding: 5px;
+}
+
+button:hover {
+  background-color: sandybrown;
+  transition: 0.7s;
+}
+
+/*----------- MAIN section -----------*/
+.grid {
+  background-color: blanchedalmond;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr) repeat(4, 1fr);
+  grid-template-rows: repeat(16, 50px);
+  gap: 15px;
+
+  padding: 20px;
+}
+
+.grid > div {
+  background-color: rgba(224, 255, 255, 0.432);
+  color: rgb(80, 102, 124);
+  height: 100%;
+  width: 100%;
+}
+
+.img {
+  background-image: url("foto.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.txt {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/*----------- Display box's-----------*/
+.foto1 {
+  grid-area: 1 / 1 / 9 / 7;
+}
+
+.foto2 {
+  grid-area: 9/1/11/3;
+}
+
+.foto3 {
+  grid-area: 9/3/11/5;
+}
+
+.foto4 {
+  grid-area: 9/5/11/7;
+}
+
+.foto5 {
+  grid-area: 7/7/10/9;
+}
+
+.foto6 {
+  grid-area: 7/9/10/11;
+}
+
+.foto7 {
+  grid-area: 15/7/17/9;
+}
+
+.foto8 {
+  grid-area: 14/9/17/11;
+}
+
+.text1 {
+  grid-area: 1/7/7/11;
+}
+
+.text2 {
+  grid-area: 11/1/17/3;
+}
+
+.text3 {
+  grid-area: 11/3/17/5;
+}
+
+.text4 {
+  grid-area: 11/5/17/7;
+}
+
+.text5 {
+  grid-area: 10/7/15/9;
+}
+
+.text6 {
+  grid-area: 10/9/14/11;
+}
+
+/*--------- FOOTER ----------*/
+footer {
+  background-color: blanchedalmond;
+  border: 10px solid sandybrown;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+
+  /*----- sticky footer -----*/
+  bottom: 0;
+  position: sticky;
+}
